@@ -2,22 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class Monster : MonoBehaviour
 {
-    private NavMeshAgent navAgent;
+    public float destroyDelay = 1f;   
 
-    void Awake()
-    {
-        navAgent = GetComponent<NavMeshAgent>();
-    }
+    public UnityEvent onCreated;
+    public UnityEvent onDestroy;
+
+    private bool isDestroyed = false;
+
 
     void Start()
     {
-        navAgent.SetDestination(new Vector3(0f, 2f, 1f));
-        navAgent.speed *= Random.Range(0.8f, 1.5f);
+        isDestroyed = true;
+        Invoke(nameof(Destroy), 2f);
+
+        onCreated?.Invoke();
+    }
+
+    public void Destroy()
+    {
+        if (!isDestroyed) { return; }
+        isDestroyed = true;
+        
+        Destroy(gameObject, destroyDelay);
+
+        onDestroy?.Invoke();
     }
 
 
-   
 }
