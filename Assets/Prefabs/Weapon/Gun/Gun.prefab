@@ -1,5 +1,37 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3572899613478073640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413776971149742179}
+  m_Layer: 20
+  m_Name: Shoot Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413776971149742179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572899613478073640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6748172778552869630}
+  m_Father: {fileID: 4085347524414268759}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6661655357125084141
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +64,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1618307710735063855}
+  - {fileID: 1413776971149742179}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -108,10 +141,34 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4879205585500211492}
+        m_TargetAssemblyTypeName: RayVisualizer, Assembly-CSharp
+        m_MethodName: On
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_LastSelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4879205585500211492}
+        m_TargetAssemblyTypeName: RayVisualizer, Assembly-CSharp
+        m_MethodName: Off
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -329,6 +386,118 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9956d75b520be1348a7372cde39c45ea,
     type: 3}
   m_PrefabInstance: {fileID: 190389676460169926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6997665386177605141
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1413776971149742179}
+    m_Modifications:
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5396139181284303879, guid: 0856c145f2a54ce448f04febcb96e49b,
+        type: 3}
+      propertyPath: m_Name
+      value: Ray Visualizer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0856c145f2a54ce448f04febcb96e49b, type: 3}
+--- !u!1 &3004213631760385112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5237035414918752845, guid: 0856c145f2a54ce448f04febcb96e49b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6997665386177605141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3170072794346883602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5396139181284303879, guid: 0856c145f2a54ce448f04febcb96e49b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6997665386177605141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4879205585500211492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170072794346883602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750731f30f54af94786375d33fc8072d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ray: {fileID: 7359488143952120214}
+  hitRayMask:
+    serializedVersion: 2
+    m_Bits: 4195328
+  distance: 100
+  reticlePoint: {fileID: 3004213631760385112}
+  showReticle: 1
+--- !u!4 &6748172778552869630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4376057328478416107, guid: 0856c145f2a54ce448f04febcb96e49b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6997665386177605141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &7359488143952120214 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 522018358705432451, guid: 0856c145f2a54ce448f04febcb96e49b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6997665386177605141}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8505048408301404092
 PrefabInstance:
