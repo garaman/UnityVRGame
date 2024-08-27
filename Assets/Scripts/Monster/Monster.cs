@@ -16,15 +16,12 @@ public class Monster : MonoBehaviour
 
     void Start()
     {
-        isDestroyed = true;
-        Invoke(nameof(Destroy), 2f);
-
         onCreated?.Invoke();
     }
 
     public void Destroy()
     {
-        if (!isDestroyed) { return; }
+        if (isDestroyed) { return; }
         isDestroyed = true;
         
         Destroy(gameObject, destroyDelay);
