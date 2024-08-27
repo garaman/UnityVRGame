@@ -906,9 +906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Survival Time
-
-    0.0s'
+  m_text: "\uC0DD\uC874 \uC2DC\uAC04\n0.0s"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 562661e1519b37e4f8bbab921d5bb611, type: 2}
   m_sharedMaterial: {fileID: 1073427118507283412, guid: 562661e1519b37e4f8bbab921d5bb611,

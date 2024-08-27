@@ -47,9 +47,9 @@ GameObject:
   - component: {fileID: 1828904750854565428}
   - component: {fileID: 7859591052269259009}
   - component: {fileID: 8920591710789194096}
-  - component: {fileID: 6454027776612172940}
   - component: {fileID: 4075118601908946071}
   - component: {fileID: 6948774661788093595}
+  - component: {fileID: 251068535538583028}
   m_Layer: 22
   m_Name: Monster
   m_TagString: Untagged
@@ -137,8 +137,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6454027776612172940}
-        m_TargetAssemblyTypeName: ChangeAgentDestination, Assembly-CSharp
+      - m_Target: {fileID: 251068535538583028}
+        m_TargetAssemblyTypeName: ChangeAgentDestinationToCore, Assembly-CSharp
         m_MethodName: Call
         m_Mode: 1
         m_Arguments:
@@ -319,19 +319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: 0.8
   max: 1.5
---- !u!114 &6454027776612172940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9216753216337557059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3fb7571a8f7a6b4dbc2737c6794025c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dest: {x: 0, y: 2, z: 1}
 --- !u!114 &4075118601908946071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +359,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.283
   m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &251068535538583028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216753216337557059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9da12e570dac1439b2d3f307806729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4103227705514992698
 PrefabInstance:
   m_ObjectHideFlags: 0

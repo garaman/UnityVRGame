@@ -17,6 +17,7 @@ public class Monster : MonoBehaviour
     void Start()
     {
         onCreated?.Invoke();
+        MonsterManager.Instance.OnSpawned(this);
     }
 
     public void Destroy()
@@ -27,6 +28,7 @@ public class Monster : MonoBehaviour
         Destroy(gameObject, destroyDelay);
 
         onDestroy?.Invoke();
+        MonsterManager.Instance.OnDestroyed(this);
     }
 
 
